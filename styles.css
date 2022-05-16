@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  padding: 20rem;
+}
+.ball {
+  animation: left-to-right 4s ease-in infinite;
+}
+
+@keyframes left-to-right {
+  50% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.ball2 {
+  transform: translate(-100px, 0);
+  animation: x-axis-path 6s infinite linear, y-axis-path 1s infinite ease-in-out;
+}
+@keyframes x-axis-path {
+  50% {
+    transform: translateX(100px);
+  }
+}
+@keyframes y-axis-path {
+  50% {
+    transform: translateY(100px);
+  }
+}
